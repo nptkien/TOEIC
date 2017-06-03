@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-
+import { Provider } from 'react-redux';
+import store from './src/store/configureStore';
 class App extends Component {
-    state = {  }
+
     render() {
         return (
-            <View>
-                <Text>
-                    AAAA
+            <Provider store={store}>
+                <View>
+                    <Text>
+                        AAAA
                 </Text>
-            </View>
+                </View>
+            </Provider>
         );
     }
 }
