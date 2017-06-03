@@ -12,11 +12,11 @@ export default class AwesomeApp extends Component {
     };
   }
   async componentWillMount() {
-  
+
     this.setState({ isReady: true });
   }
   render() {
-  
+ 
     return <HomeScreen />;
   }
 }
