@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text,ScrollView } from 'react-native';
+import ListQuest from '../../../components/listQuestion/ListQuestion'
 
 class TestPratice extends Component {
   
     render() {
         return (
-            <View style={{flex:1, justifyContent: 'center', alignItems: 'center'}}>
-                <Text>Test Pratice Screen</Text>
-            </View>
+           <ScrollView style={{flex:1}}>
+               
+               <ListQuest />
+               <ListQuest />
+               <ListQuest />
+               <ListQuest />
+               <ListQuest />
+               <ListQuest />
+               <ListQuest />
+          </ScrollView>
         );
     }
 }

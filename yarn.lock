@@ -3618,6 +3618,12 @@ react-native-keyboard-aware-scroll-view@0.2.7:
   version "0.14.0"
   resolved "https://github.com/expo/react-native-maps/archive/v0.14.0.tar.gz#993c90136e9370c693b423960fcb679b1c25cad8"
 
+react-native-progress@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-progress/-/react-native-progress-3.2.1.tgz#9f2353045c49f06803ae04d86a2cd5baa83cd465"
+  dependencies:
+    prop-types "^15.5.8"
+
 react-native-safe-module@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-module/-/react-native-safe-module-1.2.0.tgz#a23824ca24edc2901913694a76646475113d570d"
