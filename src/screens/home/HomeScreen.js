@@ -1,5 +1,6 @@
 import React from "react";
 import { StatusBar } from "react-native";
+import {View} from 'react-native';
 import {
     Button,
     Text,
@@ -32,7 +33,7 @@ export default class HomeScreen extends React.Component {
 
 
         return (
-            <Container>
+            <Container >
                 <Header hasTabs>
                     <Left>
                         <Button
@@ -63,8 +64,8 @@ export default class HomeScreen extends React.Component {
                     </Right>
 
                 </Header>
-                <Tabs>
-                    <Tab heading="Test Pratice" textStyle={{ fontSize: 10 }} activeTextStyle={{ fontSize: 12 }}>
+                <Tabs >
+                    <Tab heading="Test Pratice" textStyle={{ fontSize: 10 }} activeTextStyle={{ fontSize: 12 }}  >
                         <TestPratice />
                     </Tab>
                     <Tab heading="Vocabulary" textStyle={{ fontSize: 10 }} activeTextStyle={{ fontSize: 12 }}>
@@ -78,9 +79,26 @@ export default class HomeScreen extends React.Component {
                     </Tab>
 
                 </Tabs>
-                <Content padder>
-
-                </Content>
+                    <View style={styles.TotalContainer}>
+                        <View style={{flex:1,justifyContent: 'space-between',alignItems: 'center'}}>
+                            <Text style={{fontWeight: 'bold',fontSize:20,color:'gray'}}>Total Score</Text>
+                            <Text style={{color:'aqua',fontSize:40,fontWeight: 'bold'}}>25</Text>
+                        </View>
+                        <View style={{flex:1}}>
+                            <View style={{flex:1}}></View>
+                            <View style={{flex:1,flexDirection:'row'}}>
+                                <View style={{flex:1,justifyContent: 'center',alignItems: 'center'}}>
+                                    <Text style={{fontSize: 20, color:'#e0e0e0'}}>Listening</Text>
+                                    <View></View>
+                                    <Text style={{color:'aqua',fontSize:20}}>20</Text>
+                                </View>
+                                <View style={{flex:1,justifyContent: 'center',alignItems: 'center'}}>
+                                    <Text style={{fontSize: 20, color:'#e0e0e0'}}>Reading</Text>
+                                    <Text style={{color:'aqua',fontSize:20}}>5</Text>
+                                </View>
+                            </View>
+                        </View>
+                    </View>
                 <Footer>
                     <FooterTab>
                         <Button badge vertical onPress={() => this.props.navigation.navigate('Calendar')}>
@@ -112,6 +130,17 @@ export default class HomeScreen extends React.Component {
 const styles = {
     textFooter: {
         fontSize: 10
+    },
+    TotalContainer: {
+    
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 100
+    },
+    textTotal: {
+        fontFamily: 'Avenir',
+        color: '#e0e0e0'
     }
 };
 
