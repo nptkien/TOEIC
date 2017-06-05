@@ -19,6 +19,10 @@ import {
     Tab,
     Tabs
 } from "native-base";
+import TestPratice from '../home/testPratice_tab/TestPratice';
+import Vocabulary from '../home/vocabulary_tab/Vocabulary';
+import Grammar from '../home/grammar_tab/Grammar';
+import MyData from '../home/mydata_tab/MyData';
 export default class HomeScreen extends React.Component {
     render() {
         return (
@@ -55,49 +59,27 @@ export default class HomeScreen extends React.Component {
                 </Header>
                 <Tabs>
                     <Tab heading="Test Pratice" textStyle={{fontSize: 10}} activeTextStyle={{fontSize: 12}}>
-                       
+                       <TestPratice />
                     </Tab>
                     <Tab heading="Vocabulary" textStyle={{fontSize: 10}} activeTextStyle={{fontSize: 12}}>
-                       
+                        <Vocabulary />
                     </Tab>
                     <Tab heading="Grammar" textStyle={{fontSize: 10}} activeTextStyle={{fontSize: 12}}>
-                       
+                       <Grammar />
                     </Tab>
-                    <Tab heading="Dữ liệu của tôi" textStyle={{fontSize: 10}} activeTextStyle={{fontSize: 12}}>
-                       
+                    <Tab heading="My Data" textStyle={{fontSize: 10}} activeTextStyle={{fontSize: 12}}>
+                       <MyData />
                     </Tab>
                     
                 </Tabs>
                 <Content padder>
-                    <Card>
-                        <CardItem>
-                            <Body>
-                                <Text>Chat App to talk some awesome people!</Text>
-                            </Body>
-                        </CardItem>
-                    </Card>
-                    <Button
-                        full
-                        rounded
-                        dark
-                        style={{ marginTop: 10 }}
-                        onPress={() => this.props.navigation.navigate("Chat")}>
-                        <Text>Chat With People</Text>
-                    </Button>
-                    <Button
-                        full
-                        rounded
-                        primary
-                        style={{ marginTop: 10 }}
-                        onPress={() => this.props.navigation.navigate("Profile")}>
-                        <Text>Goto Profiles</Text>
-                    </Button>
+                    
                 </Content>
                 <Footer>
                     <FooterTab>
                         <Button badge vertical>
                             <Badge><Text>10</Text></Badge>
-                            <Icon active name='apps' />
+                            <Icon active name='calendar' />
                             <Text style={styles.textFooter}>Lịch học</Text>
                         </Button>
                         <Button >
@@ -126,3 +108,30 @@ const styles = {
         fontSize: 10
     }
 }
+
+
+/**
+ * <Card>
+                        <CardItem>
+                            <Body>
+                                <Text>Chat App to talk some awesome people!</Text>
+                            </Body>
+                        </CardItem>
+                    </Card>
+                    <Button
+                        full
+                        rounded
+                        dark
+                        style={{ marginTop: 10 }}
+                        onPress={() => this.props.navigation.navigate("Chat")}>
+                        <Text>Chat With People</Text>
+                    </Button>
+                    <Button
+                        full
+                        rounded
+                        primary
+                        style={{ marginTop: 10 }}
+                        onPress={() => this.props.navigation.navigate("Profile")}>
+                        <Text>Goto Profiles</Text>
+                    </Button>
+ */

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { AppRegistry, Alert } from "react-native";
+import { Alert } from "react-native";
 import {
   Text,
   Container,
@@ -16,26 +16,18 @@ import {
   Button,
   H1
 } from "native-base";
-import { StackNavigator } from "react-navigation";
+//import { StackNavigator } from "react-navigation";
 import EditScreenOne from "./EditScreenOne.js";
 import EditScreenTwo from "./EditScreenTwo.js";
 export default class Profile extends React.Component {
   componentDidMount() {
-    Alert.alert("No Users Found", "Oops, Looks like you are not signed in");
+   // Alert.alert("No Users Found", "Oops, Looks like you are not signed in");
   }
   render() {
     return (
       <Container>
         <Content padder>
-          <Card>
-            <CardItem>
-              <Icon active name="paper-plane" />
-              <Text>Show User profiles here</Text>
-              <Right>
-                <Icon name="close" />
-              </Right>
-            </CardItem>
-          </Card>
+         
           <Button
             full
             rounded

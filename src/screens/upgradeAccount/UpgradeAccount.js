@@ -15,13 +15,13 @@ import {
   H1
 } from "native-base";
 
-class LogIn extends Component {
+class UpgradeAccount extends Component {
 
     render() {
         return (
             <Container>
                 <Content padder>
-                    <Text>Login Screen</Text>
+                    <Text>UpgradeAccount Screen</Text>
                 </Content>
             </Container>
         );
@@ -29,7 +29,7 @@ class LogIn extends Component {
 }
 
 // Configuration Header
-LogIn.navigationOptions = ({ navigation }) => ({
+UpgradeAccount.navigationOptions = ({ navigation }) => ({
     header: (
         <Header>
             <Left>
@@ -38,12 +38,12 @@ LogIn.navigationOptions = ({ navigation }) => ({
                 </Button>
             </Left>
             <Body>
-                <Title>LogIn</Title>
+                <Title>Upgrade Account</Title>
             </Body>
             <Right />
         </Header>
     )
 });
 
-export default LogIn;
+export default UpgradeAccount;
 
