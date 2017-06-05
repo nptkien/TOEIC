@@ -41,7 +41,7 @@ export default class HomeScreen extends React.Component {
                     <Right>
                         <Button
                             transparent
-                            onPress={() => this.props.navigation.navigate("DrawerOpen")}>
+                            onPress={() => this.props.navigation.navigate('Search')}>
                             <Icon name="search" />
                         </Button>
                         <Button

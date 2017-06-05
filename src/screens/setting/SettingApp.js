@@ -38,7 +38,7 @@ SettingApp.navigationOptions = ({ navigation }) => ({
                 </Button>
             </Left>
             <Body>
-                <Title>Upgrade Account</Title>
+                <Title>Setting</Title>
             </Body>
             <Right />
         </Header>

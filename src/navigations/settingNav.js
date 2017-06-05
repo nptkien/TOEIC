@@ -4,4 +4,6 @@ import Setting from '../screens/setting/SettingApp';
 
 const SettingApp = StackNavigator({
     Setting: {screen: Setting}
-})
+});
+export default SettingApp;
+

@@ -6,6 +6,8 @@ import SideBar from '../screens/sidebar/SideBar';
 import LogIn from './loginNav';
 import UpgradeAccount from './upAccNav';
 import { DrawerNavigator } from "react-navigation";
+import Setting from './settingNav.js';
+import Search from './searchNav';
 const HomeScreenRouter = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -13,6 +15,8 @@ const HomeScreenRouter = DrawerNavigator(
     UpgradeAccount: { screen: UpgradeAccount},
     OtherApp: { screen: MainScreenNavigator },
     Profile: { screen: Profile },
+  	Setting: {screen: Setting},
+    Search : {screen: Search}
 
   },
   {
