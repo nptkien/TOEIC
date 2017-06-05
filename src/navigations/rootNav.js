@@ -8,6 +8,11 @@ import UpgradeAccount from './upAccNav';
 import { DrawerNavigator } from "react-navigation";
 import Setting from './settingNav.js';
 import Search from './searchNav';
+import Calendar from './calendarNav';
+import Challenge from './challengeNav';
+import Community from './communityNav';
+import Statistics from './statisticsNav';
+
 const HomeScreenRouter = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -16,7 +21,11 @@ const HomeScreenRouter = DrawerNavigator(
     OtherApp: { screen: MainScreenNavigator },
     Profile: { screen: Profile },
   	Setting: {screen: Setting},
-    Search : {screen: Search}
+    Search : {screen: Search},
+    Calendar: {screen: Calendar},
+    Challenge: {screen: Challenge},
+    Community: {screen: Community},
+    Statistics: {screen: Statistics}
 
   },
   {
